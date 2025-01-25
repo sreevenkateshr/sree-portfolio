@@ -693,15 +693,8 @@ h2 span {
     }
 }
 
-/* Hide vertical-text on laptop (L) screens (screens between 1024px and 1440px) */
-@media (min-width: 1024px) and (max-width: 1440px) {
-    .vertical-text {
-        display: none; /* Hide the vertical text */
-    }
-}
-
-/* Hide vertical-text on mobile and tablet (screens less than 1024px) */
-@media (max-width: 1023px) {
+/* Hide vertical-text on laptop (L) and mobile (screens between 1024px and 1440px, and less than 1024px) */
+@media (max-width: 1440px) {
     .vertical-text {
         display: none; /* Hide the vertical text */
     }
