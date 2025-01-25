@@ -1,0 +1,681 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #000000, #333333);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #444444; /* Black background */
+    color: #fff; /* White text */
+    position: sticky; /* Stick the navbar to the top */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.logo-circle {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: #C5FFE0; /* Purple color */
+    border-radius: 50%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.brand-name {
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #ddd; /* Slightly lighter on hover */
+}
+
+
+/* Main Container */
+.main-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+
+.main-container .text {
+    flex: 1;
+}
+
+.main-container .photo {
+    flex-shrink: 0;
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 3px solid #ffffff;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+}
+
+h2 span {
+    color: #C5FFE0;
+    font-style: italic;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #aaaaaa;
+}
+
+.get-in-touch-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #C5FFE0;
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    text-align: center;
+}
+.vertical-text {
+    writing-mode: vertical-lr;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 8rem;
+    color: #444444;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* Hide .vertical-text on devices with width less than or equal to 768px */
+@media (max-width: 768px) {
+    .vertical-text {
+        display: none;
+    }
+}
+
+/* Hide .vertical-text on devices with width less than or equal to 480px */
+@media (max-width: 480px) {
+    .vertical-text {
+        display: none;
+    }
+}
+
+
+
+/* About Section */
+.about-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px;
+    margin: 50px auto;
+    border-radius: 10px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-section .text {
+    flex: 1;
+}
+
+.about-section .photo {
+    flex-shrink: 0;
+    border-radius: 15px;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.about-section h3 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.about-buttons a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.about-buttons .hire-me {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #000000;
+}
+
+.about-buttons .download-cv {
+    background-color: #C5FFE0;
+    color: #000000;
+}
+
+
+
+/* Skills Section */
+.skills-section {
+    text-align: center;
+    max-width: 800px;
+}
+
+.skills-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.skills-section p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.skill {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill:hover {
+    transform: scale(1.1);
+}
+
+.skill i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.skill span {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+/* Work Experience Section */
+.work-experience {
+    max-width: 900px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 40px;
+    background-color:#2c2c2c;
+    color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+    border-top: 4px solid #C5FFE0;
+}
+
+.work-experience h1 {
+    font-size: 2.8rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.work-experience h1 span {
+    display: block;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #C5FFE0;
+}
+
+.work-experience .company {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.work-experience .company h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.work-experience .company p {
+    font-size: 1.1rem;
+    color: #bbb;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.work-experience .company p strong {
+    color: #C5FFE0;
+}
+
+@media (max-width: 768px) {
+    .work-experience h1 {
+        font-size: 2.2rem;
+    }
+
+    .work-experience h1 span {
+        font-size: 2.8rem;
+    }
+
+    .work-experience .company h3 {
+        font-size: 1.8rem;
+    }
+
+    .work-experience .company p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Contact Section */
+.contact-section {
+    max-width: 900px;
+    width: 100%;
+    background-color: #2c2c2c;
+    border-radius: 8px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+.contact-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 1rem;
+    color: #bbbbbb;
+}
+
+.contact-info {
+    margin-bottom: 30px;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+
+.form-control {
+    background-color:white ;
+    color: #ffffff;
+    border: 1px solid #555;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #6c757d;
+}
+
+
+.btn-custom {
+    background-color: #C5FFE0;
+    color: black;
+    border: none;
+}
+
+.btn-custom:hover {
+    background-color: #C5FFE0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .main-container .text {
+        margin-bottom: 20px;
+    }
+
+    .main-container .photo {
+        width: 200px;
+        height: 200px;
+    }
+
+    .navbar {
+        padding: 15px;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .about-section {
+        flex-direction: column;
+        padding: 30px;
+    }
+
+    .about-section .text {
+        text-align: center;
+    }
+
+    .about-section .photo {
+        width: 250px;
+        height: 250px;
+    }
+
+    .contact-section {
+        padding: 30px;
+    }
+
+    .work-experience p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        margin: 50px auto;
+    }
+
+    .main-container h2 {
+        font-size: 2rem;
+    }
+
+    .get-in-touch-btn {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+
+    .about-buttons a {
+        font-size: 0.9rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .work-experience h1 {
+        font-size: 2.5rem;
+    }
+
+    .contact-section h1 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Spreads out the brand and nav items */
+    align-items: center; /* Aligns items vertically */
+    padding: 10px 20px;
+    background-color: black; /* Background color of navbar */
+    color: #fff;
+    position: sticky;
+    top: 0; /* Sticks navbar to the top */
+    z-index: 1000;
+    width: 100%; /* Makes it fluid */
+}
+
+/* Brand section */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adds space between logo and brand name */
+}
+
+.logo-circle {
+    background-color: #fff; /* White circle for the logo */
+    color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Nav items */
+.nav {
+    display: flex;
+    gap: 20px; /* Space between nav links */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    font-size: 16px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #f9a825; /* Highlight color on hover */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stacks navbar items */
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .nav {
+        flex-direction: column; /* Stacks nav links vertically */
+        width: 100%; /* Full width for mobile */
+    }
+    .nav-item {
+        text-align: left;
+        width: 100%;
+    }
+    .nav-link {
+        padding: 10px;
+        display: block;
+        width: 100%; /* Makes links full width */
+    }
+}
+
+
+/* navbar name */
+.brand-name {
+    font-size: 24px; /* Adjust size as needed */
+    display: inline-block;
+    font-family: 'Arial', sans-serif; /* Choose a clean font */
+}
+
+.bold {
+    font-weight: 700; /* Bold style */
+    color:white; /* Darker color for contrast */
+}
+
+.light {
+    font-weight: 300; /* Light style */
+    color: white; /* Lighter color for a unique touch */
+}
+
+/* SKILLS WHAT I AM FAMILAR WITH */
+.section-title {
+    font-size: 48px; /* Makes the text large */
+    font-weight: 800; /* Bold style */
+    text-align: center; /* Center-align the title */
+    color: #C5FFE0; /* Dark color for contrast */
+    margin: 20px 0; /* Adds vertical spacing */
+    line-height: 1.2; /* Adjusts line spacing for multi-line titles */
+}
+
+/* social media  */
+.social-icon {
+    font-size: 36px; /* Adjust size to make icons large */
+    color: #333; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth color change on hover */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.social-icon:hover {
+    color: #C5FFE0; /* Change color on hover */
+}
+
+.me-2 {
+    margin-right: 16px; /* Adds spacing between icons */
+}
+  
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:black;
+    color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between logo and brand name */
+}
+
+.logo-circle {
+    background-color: #fff;
+    color: #333;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.brand-name {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item .nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-item .nav-link:hover {
+    color: #f9a825;
+}
+
+/* Media query to hide navigation items on mobile devices and fix the layout */
+@media (max-width: 768px) {
+    .nav {
+        display: none; /* Hides navigation links */
+    }
+
+    .navbar-brand {
+        display: flex; /* Ensures logo and brand name are side by side */
+        justify-content: flex-start; /* Aligns logo and name to the left */
+        gap: 10px; /* Space between logo and name */
+        width: 100%;
+    }
+
+    .logo-circle {
+        width: 35px; /* Adjusts logo size */
+        height: 35px; /* Adjusts logo size */
+    }
+
+    .brand-name {
+        font-size: 26px; /* Adjust font size for mobile */
+    }
+}
+
+
