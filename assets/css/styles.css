@@ -678,4 +678,11 @@ h2 span {
     }
 }
 
+/* Hide first image (Profile Picture) on mobile screens */
+@media (max-width: 768px) {
+    .main-container .photo:first-of-type {
+        display: none;
+    }
+}
+
 
