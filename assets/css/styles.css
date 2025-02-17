@@ -701,3 +701,49 @@ h2 span {
 }
 
 
+/* jeffery */
+.jeffrybrus-link:hover {
+    color: #C5FFE0;
+}
+.jeffrybrus-link {
+    text-decoration: none;
+    color: black; /* Set an initial color */
+    font-weight: bold;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+
+.jeffrybrus-link:hover {
+    color: #C5FFE0 !important; /* Ensure it applies */
+}
+
+ /* Import Google Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Merriweather&family=Roboto:wght@400&display=swap');
+
+ .contact-title {
+     font-family: 'Poppins', sans-serif;
+     font-weight: 600;
+ }
+
+ .contact-text, .contact-info p {
+     font-family: 'Poppins', sans-serif;
+     font-size: 16px;
+     font-weight: 600;
+
+ }
+
+ .contact-link {
+     font-family: 'Poppins', sans-serif;
+     font-weight: bold;
+     text-decoration: none;
+     color: #000;
+ }
+
+ .contact-link:hover {
+     color: #C5FFE0;
+ }
+
+.get-in-touch{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
