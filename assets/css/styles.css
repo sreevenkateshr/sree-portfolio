@@ -183,19 +183,21 @@ h2 span {
 }
 
 .about-section h3 {
-    font-size: 2.5rem;
+    font-size: 4.5rem;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 .about-section p {
     font-size: 1.1rem;
     color: #333333;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 .about-buttons a {
     display: inline-block;
-    margin-right: 20px;
+    margin-right: 13px;
     padding: 10px 20px;
     font-size: 1rem;
     border-radius: 30px;
@@ -213,7 +215,10 @@ h2 span {
     color: #000000;
 }
 
-
+.aboutme{
+    font-family:'Rightman Signature', sans-serif;;
+    font-size: larger;
+}
 
 /* Skills Section */
 .skills-section {
@@ -284,8 +289,8 @@ h2 span {
 
 .work-experience h1 span {
     display: block;
-    font-size: 3.5rem;
-    font-weight: bold;
+    font-size: 4.5rem;
+    /* font-weight: bold; */
     color: #C5FFE0;
 }
 
@@ -344,6 +349,8 @@ h2 span {
 .contact-section h1 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    text-align: center;
+    font-family: 'Rightman Signature', sans-serif;
 }
 
 .contact-section p {
@@ -577,12 +584,15 @@ h2 span {
 
 /* SKILLS WHAT I AM FAMILAR WITH */
 .section-title {
-    font-size: 48px; /* Makes the text large */
-    font-weight: 800; /* Bold style */
+    font-size: 50px !important; /* Makes the text large */
+    font-weight: normal; /* Bold style */
+    letter-spacing: 1px;
     text-align: center; /* Center-align the title */
     color: #C5FFE0; /* Dark color for contrast */
     margin: 20px 0; /* Adds vertical spacing */
     line-height: 1.2; /* Adjusts line spacing for multi-line titles */
+    font-family: 'Rightman Signature', sans-serif;
+    ;
 }
 
 /* social media  */
@@ -723,7 +733,7 @@ h2 span {
 
  .contact-title {
      font-family: 'Poppins', sans-serif;
-     font-weight: 600;
+     font-weight: 300;
  }
 
  .contact-text, .contact-info p {
@@ -747,5 +757,10 @@ h2 span {
 .get-in-touch{
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 300;
+}
+
+.experience{
+    font-family: 'Rightman Signature', sans-serif;
+    font-weight: 200rem !important;
 }
