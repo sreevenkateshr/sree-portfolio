@@ -1,4 +1,4 @@
-/* General Styles */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Great+Vibes&family=Julius+Sans+One&family=Lexend+Deca:wght@100..900&family=Love+Light&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Ruthie&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
     background: linear-gradient(135deg, #000000, #333333);
@@ -25,6 +25,7 @@ body {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    font-family:  "Julius Sans One", sans-serif;
 }
 
 .navbar-brand {
@@ -43,7 +44,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
+    font-size:  27px;
     font-weight: bold;
     margin-right: 10px;
 }
@@ -193,6 +194,7 @@ h2 span {
     color: #333333;
     margin-bottom: 20px;
     text-align: justify;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .about-buttons a {
@@ -289,7 +291,7 @@ h2 span {
 
 .work-experience h1 span {
     display: block;
-    font-size: 4.5rem;
+    font-size: 2.5rem;
     /* font-weight: bold; */
     color: #C5FFE0;
 }
@@ -304,6 +306,8 @@ h2 span {
     font-weight: 700;
     margin-bottom: 10px;
     color: #fff;
+    font-family: "Julius Sans One", sans-serif;
+
 }
 
 .work-experience .company p {
@@ -311,6 +315,7 @@ h2 span {
     color: #bbb;
     line-height: 1.8;
     margin-bottom: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 
 .work-experience .company p strong {
@@ -350,7 +355,7 @@ h2 span {
     font-size: 2.5rem;
     margin-bottom: 20px;
     text-align: center;
-    font-family: 'Rightman Signature', sans-serif;
+    font-family: "Julius Sans One", sans-serif;
 }
 
 .contact-section p {
@@ -573,13 +578,15 @@ h2 span {
 }
 
 .bold {
-    font-weight: 700; /* Bold style */
     color:white; /* Darker color for contrast */
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: 900; /* Bold style */
 }
 
 .light {
     font-weight: 300; /* Light style */
     color: white; /* Lighter color for a unique touch */
+    font-family: "Julius Sans One", sans-serif;
 }
 
 /* SKILLS WHAT I AM FAMILAR WITH */
@@ -591,7 +598,7 @@ h2 span {
     color: #C5FFE0; /* Dark color for contrast */
     margin: 20px 0; /* Adds vertical spacing */
     line-height: 1.2; /* Adjusts line spacing for multi-line titles */
-    font-family: 'Rightman Signature', sans-serif;
+    font-family: "Julius Sans One", sans-serif;
     ;
 }
 
@@ -722,6 +729,7 @@ h2 span {
     color: black; /* Set an initial color */
     font-weight: bold;
     transition: color 0.3s ease-in-out; /* Smooth transition */
+    font-family: "Julius Sans One", sans-serif;
 }
 
 .jeffrybrus-link:hover {
@@ -737,7 +745,7 @@ h2 span {
  }
 
  .contact-text, .contact-info p {
-     font-family: 'Poppins', sans-serif;
+     font-family: "Julius Sans One", sans-serif;
      font-size: 16px;
      font-weight: 600;
 
@@ -761,6 +769,8 @@ h2 span {
 }
 
 .experience{
-    font-family: 'Rightman Signature', sans-serif;
-    font-weight: 200rem !important;
+    font-family:  "Julius Sans One", sans-serif;
+    font-weight: 10rem !important;
 }
+
+
